@@ -1,0 +1,209 @@
+:root {
+    --color-neutral-light: hsl(0, 0%, 100%);
+    --color-neutral-medium: hsl(228, 12%, 48%);
+    --color-neutral-dark: hsl(212, 21%, 14%);
+
+    --color-primary-light: hsl(30, 38%, 92%);
+    --color-primary-medium: hsl(158, 36%, 37%);
+    --color-primary-dark: hsl(158, 42%, 18%);
+
+    --ff-heading: 'Fraunces', sans-serif;
+    --ff-body: 'Montserrat', sans-serif;
+
+    --fs-xs: 0.75rem;
+    --fs-s: 0.8125rem;
+    --fs-m: 0.875rem;
+    --fs-r: 1rem;
+    --fs-l: 2rem;
+
+    --fw-regular: 500;
+    --fw-dark: 700;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-light);
+    line-height: 1.4375;
+    background-color: var(--color-primary-light);
+    height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+.product-card {
+    margin-inline: 1rem;
+    margin-block: 1.75rem;
+    display: grid;
+}
+
+.product-card__img-group {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.product-card__img-group * {
+    border-radius: inherit;
+}
+
+.product-card__text-group {
+    background-color: var(--color-neutral-light);
+    padding: 1.5rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.product-card__ribbon {
+    text-transform: uppercase;
+    letter-spacing: 0.3125rem;
+    color: var(--color-neutral-medium);
+}
+
+.product-card__title {
+    margin-top: 0.75rem;
+    font-family: var(--ff-heading);
+    font-size: var(--fs-l);
+    font-weight: var(--fw-dark);
+    color: var(--color-neutral-dark);
+}
+
+.product-card__desc {
+    margin-top: 1rem;
+    color: var(--color-neutral-medium);
+}
+
+.product-card__prices {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.1875rem;
+    font-family: var(--ff-heading);
+}
+
+.product-card__new-price {
+    font-weight: var(--fw-dark);
+    font-size: var(--fs-l);
+    color: var(--color-primary-medium);
+}
+
+.product-card__old-price {
+    color: var(--color-neutral-medium);
+    align-self: center;
+}
+
+.visually-hidden:not(:active):not(:focus) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.product-card__button {
+    margin-top: 1.25rem;
+    background-color: var(--color-primary-medium);
+    cursor: pointer;
+    width: 100%;
+    padding-block: 0.9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.725625rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-primary-dark);
+    }
+}
+
+.product-card__button-text {
+    font-size: var(--fs-r);
+    color: var(--color-neutral-light);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-light);
+}
+
+@media only screen and (min-width: 40em) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-card {
+        grid-template-columns: 1fr 1fr;
+        max-width: 37.5rem
+    }
+
+    .product-card__img-group {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.625rem;
+        box-shadow: none;
+    }
+
+    .product-card__text-group {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-card__title {
+        margin-top: 1.25rem;
+    }
+
+    .product-card__desc {
+        margin-top: 1.5rem;
+    }
+
+    .product-card__prices {
+        margin-top: 1.8125rem;
+    }
+
+    .product-card__button {
+        margin-top: 1.875rem;
+    }
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
