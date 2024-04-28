@@ -54,8 +54,6 @@ I have written CSS in BEM methodology. I m still learning it. I also implemented
 `box-radius: inherit` in image
 - ... about `.visually-hidden`, how it helps screen-headers to read content, yet content is hidden from displaying
 
-https://www.a11yproject.com/posts/how-to-hide-content/
-
 ### Continued development
 
 I want to learn and continue writing CSS in BEM methodology and understand how I can make my websites as accessible as possible.
@@ -67,4 +65,4 @@ I want to learn and continue writing CSS in BEM methodology and understand how I
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/karthickg24)
+- Frontend Mentor - [@karthickg24](https://www.frontendmentor.io/profile/karthickg24)
