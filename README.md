@@ -65,4 +65,4 @@ I want to learn and continue writing CSS in BEM methodology and understand how I
 
 ## Author
 
-- Frontend Mentor - [@karthickg24](https://www.frontendmentor.io/profile/karthickg24)
+- Frontend Mentor - [@karthikganesanTR](https://www.frontendmentor.io/profile/karthikganesanTR)
