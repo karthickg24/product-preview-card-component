@@ -62,6 +62,7 @@ I want to learn and continue writing CSS in BEM methodology and understand how I
 
 - [How to: Hide Content](https://www.a11yproject.com/posts/how-to-hide-content/) - This helped me to know little about visually hidden class. Use the styles.
 - [How to plan your HTML: Product Preview Card](https://fedmentor.dev/posts/html-plan-product-preview/) - This article goes through the steps to complete this challenge with accessibility in mind.
+- [When and How to use the section element](https://www.tempertemper.net/blog/when-and-how-to-use-the-section-element)
 
 ## Author
 

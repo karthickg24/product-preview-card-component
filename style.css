@@ -16,7 +16,7 @@
     --fs-r: 1rem;
     --fs-l: 2rem;
 
-    --fw-regular: 500;
+    --fw-light: 500;
     --fw-dark: 700;
 }
 
@@ -75,6 +75,8 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 0.3125rem;
     color: var(--color-neutral-medium);
+    font-size: var(--fs-xs);
+    line-height: normal;
 }
 
 .product-card__title {
@@ -152,11 +154,6 @@ h3 {
         align-items: center;
     }
 
-    main {
-        display: flex;
-        justify-content: center;
-    }
-
     .product-card {
         grid-template-columns: 1fr 1fr;
         max-width: 37.5rem
@@ -168,9 +165,6 @@ h3 {
 
     .product-card__text-group {
         padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .product-card__title {
