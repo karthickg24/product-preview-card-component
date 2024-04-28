@@ -144,10 +144,10 @@ h3 {
 }
 
 .product-card__button-text {
-    font-size: var(--fs-r);
+    font-size: var(--fs-m);
     color: var(--color-neutral-light);
     font-family: var(--ff-body);
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-dark);
 }
 
 @media only screen and (min-width: 40em) {
