@@ -44,7 +44,7 @@ body {
     font-weight: var(--fw-light);
     line-height: 1.4375;
     background-color: var(--color-primary-light);
-    height: 100vh;
+    min-height: 100dvh;
 }
 
 h1,
